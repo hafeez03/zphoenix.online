@@ -779,6 +779,96 @@
 
     </section><!-- /Contact Section -->
 
+    <section class="newsletter-section">
+  <div class="newsletter-text">
+    <h2>Stay Updated</h2>
+    <p>
+      Subscribe to our newsletter to receive updates on new products and promotions.<br>
+      You can unsubscribe at any time by using the unsubscribe link in the email.
+    </p>
+  </div>
+
+  <form class="newsletter-form" action="#" method="post">
+    <input type="email" name="email" placeholder="E.g. your@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<style>
+  .newsletter-section {
+    background: #565760;
+    color: #ffffff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-family: Arial, sans-serif;
+  }
+
+  .newsletter-text {
+    max-width: 300px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .newsletter-form {
+    background: #ffffff;
+    padding: 32px;
+    width: 420px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #ddd;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    padding: 13px 16px;
+    font-size: 15px;
+    border: 1px solid #d5dbe0;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    background: #27bf3a;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .newsletter-form button:hover {
+    background: #20a832;
+  }
+
+  @media (max-width: 768px) {
+    .newsletter-section {
+      flex-direction: column;
+      gap: 30px;
+      padding: 30px 20px;
+      align-items: stretch;
+    }
+
+    .newsletter-form {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+</style>
+
   </main>
 
   <footer id="footer" class="footer dark-background">
