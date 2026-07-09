@@ -32,7 +32,7 @@
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  if (mobileNavToggleBtn) mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
   /**
    * Hide mobile nav on same-page/hash links
@@ -78,7 +78,7 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
+  if (scrollTop) scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
       top: 0,
@@ -173,44 +173,6 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  /**
-   * Contact form (mailto fallback)
-   */
-  const contactUsForm = document.querySelector('#contact-us-form');
-  if (contactUsForm) {
-    const statusEl = contactUsForm.querySelector('.contact-form-status');
 
-    function setStatus(message, kind) {
-      if (!statusEl) return;
-      statusEl.classList.remove('text-danger', 'text-success');
-      if (kind) statusEl.classList.add(kind === 'success' ? 'text-success' : 'text-danger');
-      statusEl.textContent = message || '';
-    }
-
-    contactUsForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      setStatus('', null);
-
-      const formData = new FormData(contactUsForm);
-      const name = String(formData.get('name') || '').trim();
-      const email = String(formData.get('email') || '').trim();
-      const subject = String(formData.get('subject') || '').trim();
-      const message = String(formData.get('message') || '').trim();
-
-      if (!name || !email || !subject || !message) {
-        setStatus('Please fill in all fields.', 'error');
-        return;
-      }
-
-      const subjectText = encodeURIComponent(`[Website Contact] ${subject}`);
-      const bodyText = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-      );
-
-      setStatus('Opening your email client...', 'success');
-      window.location.href = `mailto:hafeez_03@hotmail.com?subject=${subjectText}&body=${bodyText}`;
-      contactUsForm.reset();
-    });
-  }
 
 })();

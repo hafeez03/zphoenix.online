@@ -290,3 +290,65 @@ textarea {
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* Separate contact and subscribe pages */
+.contact .subscribe-card p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  line-height: 1.7;
+}
+
+.contact .subscribe-card .btn,
+.contact .contact-us-form .btn {
+  border-radius: 14px;
+  font-weight: 700;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* GitHub Pages footer updates */
+.footer .footer-nav-links { padding: 0; margin: 0; }
+.footer .footer-nav-links li { margin-bottom: 10px; }
+.footer .footer-nav-links a { color: color-mix(in srgb, var(--default-color), transparent 20%); transition: 0.3s; }
+.footer .footer-nav-links a:hover { color: var(--accent-color); padding-left: 4px; }
+.footer .footer-links h4 { font-size: 16px; font-weight: 700; margin-bottom: 15px; }
+
+/* Newsletter inside footer */
+.footer .footer-newsletter {
+  padding: 28px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer .footer-newsletter h4 {
+  margin-bottom: 10px;
+}
+.footer .footer-newsletter p {
+  margin: 0 0 8px;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+.footer .footer-subscribe-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+.footer .footer-subscribe-form input[type="email"] {
+  min-height: 52px;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer .footer-subscribe-form .btn {
+  min-height: 52px;
+  border-radius: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  .footer .footer-newsletter { padding: 22px; }
+  .footer .footer-subscribe-row { flex-direction: column; }
+  .footer .footer-subscribe-form .btn { width: 100%; }
+}
+
+.footer .footer-newsletter p:last-child { margin-bottom: 0; }

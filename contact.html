@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>IT Support - ESOLTECH Services</title>
+  <title>Contact Us - ESOLTECH</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -25,14 +26,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/modern.css" rel="stylesheet">
+
 </head>
 
 <body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+<header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename sitename-animated">ESOLTECH</h1>
       </a>
 
@@ -40,11 +44,12 @@
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
 
     </div>
   </header>
@@ -53,35 +58,68 @@
 
     <div class="page-title" data-aos="fade">
       <div class="container">
-        <h1>IT Support</h1>
+        <h1>Contact Us</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li class="current">IT Support</li>
+            <li class="current">Contact Us</li>
           </ol>
         </nav>
       </div>
     </div>
 
-    <section class="menu section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 menu-item">
-            <div class="text-center">
-              <a href="assets/img/menu/IT Support.png" class="glightbox">
-                <img src="assets/img/menu/IT Support.png" class="img-fluid" style="border-radius: 50px;"
-                  alt="IT Support">
-              </a>
-              <p class="ingredients mb-1">Fast remote and onsite support for users, devices, and everyday IT issues.</p>
-              <p class="ingredients mb-1">SLA-driven ticket handling with proactive maintenance to prevent repeat
-                problems.</p>
-              <p class="ingredients mb-0">Clear communication, root-cause fixes, and guidance to keep teams
-                productive.</p>
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
+      </div>
 
-              <div class="mt-4">
-                <a href="services.html" class="btn btn-danger">Back to All Services</a>
-              </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div><h3>Address</h3><p>Karachi, Pakistan</p></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div><h3>Call Us</h3><p>+923238556568</p></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div><h3>Email Us</h3><p>hafeez_03@hotmail.com</p></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-clock flex-shrink-0"></i>
+              <div><h3>Opening Hours</h3><p class="mb-1"><strong>Mon-Fri:</strong> 9AM - 5PM</p><p class="mb-0"><strong>Sat-Sun:</strong> Off</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-3">
+          <div class="col-lg-9 mx-auto" data-aos="fade-up" data-aos-delay="600">
+            <div class="contact-us-form">
+              <h3 class="mb-3">Send Us a Message</h3>
+              <form id="contact-us-form" action="#" data-endpoint="https://formsubmit.co/ajax/hafeez_03@hotmail.com" method="post" novalidate>
+                <input type="hidden" name="_subject" value="New Contact Form Message - ESOLTECH">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="row gy-3">
+                  <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Your Name" required></div>
+                  <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Your Email" required></div>
+                  <div class="col-12"><input type="text" name="subject" class="form-control" placeholder="Subject" required></div>
+                  <div class="col-12"><textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea></div>
+                  <div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3">
+                    <div class="contact-form-status small" aria-live="polite"></div>
+                    <button type="submit" class="btn btn-danger px-4">Send Message</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -90,14 +128,14 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
 
     <div class="container">
       <div class="footer-newsletter mb-4" data-aos="fade-up">
         <div class="row gy-4 align-items-center">
           <div class="col-lg-5">
             <h4>Stay Updated</h4>
-            <p>Subscribe to our newsletter to receive updates on new products and promotions.</p>
+            <p>Subscribe to our newsletter to receive updates on new products.</p>
             <p>You can unsubscribe at any time by using the unsubscribe link in the email.</p>
           </div>
           <div class="col-lg-7">
@@ -165,9 +203,11 @@
 
   </footer>
 
+<!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -185,6 +225,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
 
+
+</body>
 </html>
